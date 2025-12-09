@@ -1,5 +1,7 @@
 ---
 title: "Correlation"
+author: "your name"
+date: "the date"
 format: html
 editor: visual
 execute: 
@@ -7,11 +9,12 @@ execute:
   warning: false
 ---
 
+Use this template notebook as the basis for answering the exercises in the correlation chapter of r4nqy
+
 ## Load packages
 ```{r}
 library(tidyverse)
 library(here)
-library(janitor)
 library(palmerpenguins)
 ```
 
@@ -28,7 +31,6 @@ penguins <- penguins |> drop_na()
 iris_filepath <- here("data", "iris.csv")
 iris <- read_csv(iris_filepath)
 glimpse(iris)
-iris <- iris |> clean_names()
 ```
 
 
